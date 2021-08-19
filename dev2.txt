@@ -1,0 +1,31 @@
+## inspiring
+When I wanted to continue the song I had made a long time ago and left half done, I saw that I needed more tools.
+It was a long time ago and my mood had changed. I needed to follow the original pattern and that was the problem.
+At the same time, I was working on a platform to build a program and I wanted to use machine learning on this platform
+That's why I created a new algorithm to both use my tutorials and help build and adjust my music.
+## what is he doing?
+In fact, the software examines the music mode and learns a pattern from it, and then guesses the harmony and counterpoint of the piece. If it is correct, the pattern is amplified, otherwise it learns a new way of composing.
+In this way, the more the composer uses the software, the better the machine learns to recognize what suggestions to make and the easier it becomes.
+## How I made it
+I used to work on a programming platform and I am still developing it
+In this platform, you can design the software and develop it from within
+Another part of this platform that needs to be designed and added is the tuning of machine learning algorithms
+With this mode, anyone can quickly connect their desired algorithm to their program
+It also makes it easier to add menus to the application database pages and connect them all together
+I designed an algorithm and created the database and put it on the platform
+## Challenges I ran
+Of course, I have to admit that I did it alone, and because I was working on two things at the same time, both the platform and the algorithm, it was very difficult for me to do what a team actually had to do.
+It is also difficult for me to design the net section because I have to spend a lot of time designing that section
+## Where am I now?
+It is currently taking the information and separating it and sending it to the database and you can see what is important is working on this data.
+And this is where machine learning begins
+## Made with
+This platform is made with Python and WX graphics and SQL light database.
+In music, it opens XML files and uses the Python Music 21 module
+##In the following
+Yes, this software can be expanded
+The music section should be added separately, which is very useful
+The algorithm can be changed according to the composer's taste and the parameters used can be increased or decreased
+And ...
+I hope that with your support, the platform will develop and help the composer become better and more advanced
+Thank you 

@@ -421,11 +421,11 @@ class MyPanel1 ( wx.Panel ):
 		else:
 			icn = thsdata[4].split("\\")[-1]
 			hnd = thsdata[9].replace('.py', '')
-			if hnd == '':
-				hndlrid = 99000
-			else:
-				# hndlrid = self.findhandler(hnd)
-				hndlrid = 10001
+			#if hnd == '':
+			#	hndlrid = 99000
+			#else:
+			hndlrid = self.findhandler(hnd)
+			#	hndlrid = 10001
 
 			if thsdata[7]:
 				disen = 0
@@ -522,11 +522,11 @@ class MyPanel1 ( wx.Panel ):
 				#print(icn)
 				#self.chkicnpath(ThsData[4])
 				hnd = ThsData[9].replace('.py', '')
-				if hnd == '':
-					hndlrid = 99000
-				else:
-					#hndlrid = self.findhandler(hnd)
-					hndlrid = 10001
+				#if hnd == '':
+				#	hndlrid = 99000
+				#else:
+				hndlrid = self.findhandler(hnd)
+				#	hndlrid = 10001
 
 				iData1 = [ThsData[1],ThsData[3],icn,ThsData[5],ThsData[6],hndlrid,ThsData[2]]
 				self.DoMenu.Table = u"toolbar"
@@ -593,6 +593,13 @@ class MyPanel1 ( wx.Panel ):
 
 	def hidit( self, event ):
 		event.Skip()
+
+	def findhandler(self, hndlrnm):
+		if hndlrnm == '':
+			return 10001
+		else:
+			codid , self.prgdir = self.MyMenu.getHndlr(hndlrnm)[0]
+			return codid
 
 	def prglst( self, event ):
 		if wx.FindWindowByName(u'List of Program') == None:

@@ -25,6 +25,7 @@ class MyPanel1 ( wx.Panel ):
 		self.filpath = filpath
 
 		txt, scor = Xmlopen.xml2dbwrite(self.filpath[0],'main.db')
+		Xmlopen.xml2dbf2(self.filpath[0],'main.db')
 
 		self.SW1 = wx.ScrolledWindow( self, wx.ID_ANY, wx.DefaultPosition, wx.DefaultSize, wx.HSCROLL|wx.VSCROLL )
 		self.SW1.SetScrollRate( 20, 20 )

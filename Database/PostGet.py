@@ -24,7 +24,6 @@ class Get:
     def GetFromDbfWithData(self):
         return sq.wxsqltxt(self.DBF, self.SQLtxt + self.Data )
 
-
     def __del__(self):
         pass
 

@@ -12,6 +12,7 @@
 import wx
 import wx.xrc
 from . import Xmlopen
+from . import DrawScor1 as DS
 
 ###########################################################################
 ## Class MyPanel1
@@ -49,15 +50,16 @@ class MyPanel1 ( wx.Panel ):
 
 		Vsz1.Add( Hsz1, 0, wx.ALIGN_CENTER_HORIZONTAL, 5 )
 
-		self.scorbrd = wx.ScrolledWindow( self, wx.ID_ANY, wx.DefaultPosition, wx.DefaultSize, wx.ALWAYS_SHOW_SB|wx.BORDER_RAISED|wx.HSCROLL|wx.VSCROLL )
-		self.scorbrd.SetScrollRate( 20, 20 )
+		#self.scorbrd = wx.ScrolledWindow( self, wx.ID_ANY, wx.DefaultPosition, wx.DefaultSize, wx.ALWAYS_SHOW_SB|wx.BORDER_RAISED|wx.HSCROLL|wx.VSCROLL )
+		#self.scorbrd.SetScrollRate( 20, 20 )
+		self.scorbrd = DS.MyScore(self, wx.ID_ANY)
 		Vsz2 = wx.BoxSizer( wx.VERTICAL )
 
-		self.pseudoDC = wx.StaticBitmap( self.scorbrd, wx.ID_ANY, wx.NullBitmap, wx.DefaultPosition, wx.DefaultSize, 0 )
-		Vsz2.Add( self.pseudoDC, 1, wx.ALL|wx.EXPAND, 5 )
+		#self.pseudoDC = wx.StaticBitmap( self.scorbrd, wx.ID_ANY, wx.NullBitmap, wx.DefaultPosition, wx.DefaultSize, 0 )
+		#Vsz2.Add( self.pseudoDC, 1, wx.ALL|wx.EXPAND, 5 )
 
-		self.mytxt = wx.TextCtrl(self, wx.ID_ANY, txt, wx.DefaultPosition, wx.DefaultSize, 0)
-		Vsz2.Add( self.mytxt, 1, wx.ALL|wx.EXPAND, 5)
+		#self.mytxt = wx.TextCtrl(self, wx.ID_ANY, txt, wx.DefaultPosition, wx.DefaultSize, 0)
+		#Vsz2.Add( self.mytxt, 1, wx.ALL|wx.EXPAND, 5)
 
 
 		self.scorbrd.SetSizer( Vsz2 )

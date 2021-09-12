@@ -18,7 +18,7 @@ def main():
 	             u'GUI\\Main':[u'DBv1.py',u'MDv1.py',u'PAv1.py',u'PGv1.py',u'PPv1.py',u'TBv1.py',u'TPv1.py'],
 	             u'GUI\\AuiPanel':[u'PAui.py',u'Rev.py',u'Stat.py']
 	              }
-	source_dirct = 'C:\\MyTest\\Temp5\\'
+	source_dirct = 'E:\\MyTest\\Temp5\\'
 	target_dirct = os.getcwd()+'\\'
 	for dirct in main_direct:
 		for update_file in main_file[dirct]:

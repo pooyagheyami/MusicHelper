@@ -1,2 +1,1 @@
-select *
-from Input
+select * from ScoreInfo

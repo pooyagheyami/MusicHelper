@@ -1,1 +1,1 @@
-select * from Mscore
+select * from MScore

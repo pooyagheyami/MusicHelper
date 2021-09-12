@@ -495,8 +495,9 @@ class MyPanel1 ( wx.Panel ):
 		U = self.getfild()
 		#print(U)
 		#print(self.prgfld.GetValue())
-		Hndl = self.prgfld.GetValue()
-		Hndlid = 10001
+		#Hndl = self.prgfld.GetValue()
+		#Hndlid = 10001
+		Hndlid = self.findhandler(self.prgfld.GetValue())
 
 		self.DoMenu.Table = u'mitem'
 		self.DoMenu.Upditem(u'itemname = ?, itemtyp = ? , handlerid = ?  where itemid = %d' % self.bardata[1],[U[2], U[6], Hndlid])
@@ -835,6 +836,13 @@ class MyPanel1 ( wx.Panel ):
 			if imodel in p:
 				return p[0]
 		return 10001
+
+	def findhandler(self, hndlrnm):
+		if hndlrnm == '':
+			return 10001
+		else:
+			codid , self.prgdir = self.MyMenu.getHndlr(hndlrnm)[0]
+			return codid
 
 	def getfild(self):
 		Data1 = self.fld1.GetValue()
